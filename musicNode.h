@@ -1,5 +1,5 @@
-#ifndef MUSIC_NODE_H
-#define MUSIC_NODE_H
+#ifndef MUSIC_NODE
+#define MUSIC_NODE
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -14,6 +14,7 @@ int TYPE_GENRE = 1;
 typedef struct
 {
     int type;             // album or genre
+    int scratch;          // used for various algorithms
     char name[20];        // name
     VertexArrayList *adj; // adjacent verticies
 } MusicNode;
